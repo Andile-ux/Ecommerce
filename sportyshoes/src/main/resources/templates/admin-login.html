@@ -1,4 +1,4 @@
-<!-- login.html for users -->
+<!-- admin-login.html for admin -->
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
@@ -9,6 +9,8 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
+             background-image: url("");
+
             margin: 0;
             padding: 0;
         }
@@ -64,15 +66,14 @@
             color: red;
         }
     </style>
-    <title>User Login</title>
-
+    <title>Admin Login</title>
 </head>
 
 <body>
 
-<h2>User Login</h2>
+<h2>Admin Login</h2>
 
-<form action="/login" method="post">
+<form action="/admin/login" method="post">
     <div>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
@@ -82,7 +83,7 @@
         <input type="password" id="password" name="password" required>
     </div>
     <div>
-        <button type="submit" th:href="@{/pro}">Login</button>
+        <button type="submit">Login</button>
     </div>
 </form>
 
